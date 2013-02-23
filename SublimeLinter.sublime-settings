@@ -1,0 +1,96 @@
+/*
+    SublimeLinter user settings
+*/
+{
+    // jshint: options for linting JavaScript. See http://jshint.com/docs/ for more info.
+    // By deault, eval is allowed.
+    "jshint_options":
+    {
+        ///////////////////////
+        // ENFORCING OPTIONS //
+        ///////////////////////
+        "bitwise": false,       // This option prohibits the use of bitwise operators such as ^ (XOR), | (OR) and others
+        "camelcase": true,      // This option allows you to force all variable names to use either camelCase style or UPPER_CASE with underscores
+        "curly": true,          // This option requires you to always put curly braces around blocks in loops and conditionals
+        "eqeqeq": true,         // This options prohibits the use of == and != in favor of === and !==
+        "forin": true,          // This option requires all for in loops to filter object's items.
+        "immed": true,          // This option prohibits the use of immediate function invocations without wrapping them in parentheses
+        // "indent": 2,            // This option enforces specific tab width for your code
+        "latedef": true,        // This option prohibits the use of a variable before it was defined
+        "newcap": true,         // This option requires you to capitalize names of constructor functions
+        "noarg": true,          // This option prohibits the use of arguments.caller and arguments.callee
+        "noempty": true,        // This option warns when you have an empty block in your code.
+        "nonew": true,          // This option prohibits the use of constructor functions for side-effects
+        "plusplus": true,       // This option prohibits the use of unary increment and decrement operators
+        "quotmark": true,       // This option enforces the consistency of quotation marks used throughout your code (true, "single" or "double")
+        "regexp": true,         // This option prohibits the use of unsafe . in regular expressions
+        "undef": true,          // This option prohibits the use of explicitly undeclared variables
+        "unused": true,         // This option warns when you define and never use your variables
+        "strict": true,         // This option requires all functions to run in EcmaScript 5's strict mode
+        "trailing": true,       // This option makes it an error to leave a trailing whitespace in your code
+        // "maxparams": 5,         // This option lets you set the max number of formal parameters allowed per function
+        "maxdepth": 5,          // This option lets you control how nested do you want your blocks to be
+        // "maxstatements": 10,    // This option lets you set the max number of statements allowed per function
+        "maxlen": 120,          // This option lets you set the maximum length of a line
+
+        //////////////////////
+        // RELAXING OPTIONS //
+        //////////////////////
+
+        "laxcomma": true,       // This option suppresses warnings about comma-first coding style
+
+
+        //////////////////
+        // ENVIRONMENTS //
+        //////////////////
+
+        // This option defines globals exposed by modern browsers: all the way from good ol' document and 
+        // navigator to the HTML5 FileReader and other new developments in the browser world
+        "browser": true,
+        "devel": true,          // This option defines globals that are usually used for logging poor-man's debugging: console, alert, etc
+        "dojo": false,          // This option defines globals exposed by the Dojo Toolkit.
+        "jquery": true,         // This option defines globals exposed by the jQuery JavaScript library
+        "mootools": false,      // This option defines globals exposed by the MooTools JavaScript framework.
+        "node": false,          // This option defines globals available when your code is running inside of the Node runtime environment
+        "prototypejs": false,   // This option defines globals exposed by the Prototype JavaScript framework
+        // "yui": false,           // This option defines globals exposed by the YUI JavaScript framework
+
+
+        ////////////
+        // LEGACY //
+        ////////////
+
+        "onevar": true,         // This option allows only one var statement per function
+        "passfail": false,      // This option makes JSHint stop on the first error or warning
+        // "white": true,          // This option make JSHint check your source code against Douglas Crockford's JavaScript coding style
+
+        "predef":   [
+            "console",
+            "log",
+
+            "Modernizr",
+            "jQuery",
+            "$",
+            "_",
+            "Backbone",
+            "Ext",
+            "Drupal",
+
+            "FCV",
+            "App",
+
+            "FB",
+
+            "google",
+            "chrome",
+            "InfoBox",
+            "RichMarker",
+            "MarkerWithLabel",
+            "GMaps",
+
+            "ScaleFX",
+            "CFG",
+            "DEBUG"
+        ]
+    }
+}
